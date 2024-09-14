@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allstate Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="script.js" async></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+</head>
+
+<body>
+
+    <nav id="desk-nav">
+        <div class="navbar">
+            <div class="logo">
+                <img src="assets/logo.png" alt="allstate">
+                <h3>Allstate</h3>
+            </div>
+            <div>
+                <ul id="navigation">
+                    <li><a href="#process">About us</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#listings">Listings</a></li>
+                    <li><a href><i class="fa-solid fa-magnifying-glass"></i></a></li>
+
+                </ul>
+            </div>
+            <div class="nav-btns">
+                <button class="btn">Other Services</button>
+                <button class="btn1" onclick="alert('Hello')">Contact Us</button>
+            </div>
+        </div>
+    </nav>
+    <nav id="ham-nav">
+        <div class="logo">
+            <img src="assets/logo.png" alt="allstate">
+            <h3>Allstate</h3>
+        </div>
+        <div class="ham-menu">
+            <div class="ham-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-navs">
+                <li><a href="#aboutus" onclick="toggleMenu()">About us</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#services" onclick="toggleMenu()">Services</a></li>
+                <li><a href="#listings" onclick="toggleMenu()">Listings</a></li>
+                <li>
+                    <div class="nav-btns">
+                        <button class="btn">Other Services</button>
+                        <button class="btn2">Contact Us</button>
+                    </div>
+                </li>
+            </div>
+        </div>
+    </nav>
+
+
+    <section id="hero">
+        <div class="heroContent">
+            <div class="textContent">
+                <p class="text1">Welcome to Allstate</p>
+                <h1 class="title1">Manage Your Property</h1>
+                <p class="text1">You Will Have Everything Nearby Supermarket, Buses, Stations, Cinemas, Theatres, The
+                    Carmen
+                    Neighbourhood, Etc.</p>
+                <div class="inputField">
+                    <input type="text" id="search" placeholder="Enter your email">
+                    <button class="search-btn" onclick="alert('Hello')">Get a Quote</button>
+                </div>
+            </div>
+        </div>
+        <div class="heroImg">
+            <img src="assets/heroImg.png" alt="heroImg">
+        </div>
+    </section>
+    <section id="process">
+        <div class="processSectionHead">
+            <p class="text2">Three Steps. Three Minutes.</p>
+            <h1 class="title2">Everything Should Be This Easy.</h1>
+        </div>
+        <div class="processDetailsSection">
+            <div class="processDetails">
+                <i class="fa-solid fa-comment-dots icon yellow"></i>
+                <h2 class="details_title yellow">Answer Questions</h2>
+                <p>Getting Insured Is As Easy As Answering a Few Short Questions About Your Home</p>
+            </div>
+            <div class="processDetails">
+                <i class="fa-solid fa-list-check icon green"></i>
+                <h2 class="details_title green">Select a Quote</h2>
+                <p>Choose Your Quote And Apply Online. No Hassle, No Paperwork, No Application Fees.</p>
+            </div>
+            <div class="processDetails ">
+                <i class="fa-solid fa-medal icon blue"></i>
+                <h2 class="details_title blue">Get Registered</h2>
+                <p>Congratulations! You're Complete This Steps. And It Feels So Good.</p>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="projectSectionHead">
+            <p class="text2">Best Projects of The Years</p>
+            <h1 class="title2">Our Recent Projects</h1>
+        </div>
+        <div class="projectDetailsSection">
+            <div class="projectDetails">
+                <div class="projectImg">
+                    <img src="assets/house1.png" alt="house1">
+                </div>
+                <div class="projectContent">
+                    <div class="projectHead">
+                        <h2>Sobha Heartland Villas</h2>
+                        <div class="projectRating">
+                            <i class="fa-solid fa-star yellow"></i>
+                            <label for="fa-star">4.83</label>
+                        </div>
+                    </div>
+                    <div class="projectText">
+                        <p>4 Bedroom Villa for Rent in Adajan Road, Surat, Gujarat</p>
+                    </div>
+                    <div class="projectPrice">
+                        <div class="price">
+                            <h2>$189</h2>
+                            <label for="price">Night</label>
+                        </div>
+                        <button class="btn3">Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="projectDetails">
+                <div class="projectImg">
+                    <img src="assets/house2.png" alt="house1">
+                </div>
+                <div class="projectContent">
+                    <div class="projectHead">
+                        <h2>Mykonos Damac Lagoons</h2>
+                        <div class="projectRating">
+                            <i class="fa-solid fa-star yellow"></i>
+                            <label for="fa-star">4.53</label>
+                        </div>
+                    </div>
+                    <div class="projectText">
+                        <p>2 Bedroom Apartment for Rent in Balqis Residence, Palm Jumeirah</p>
+                    </div>
+                    <div class="projectPrice">
+                        <div class="price">
+                            <h2>$530</h2>
+                            <label for="price">Night</label>
+                        </div>
+                        <button class="btn3">Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="projectDetails">
+                <div class="projectImg">
+                    <img src="assets/house3.png" alt="house1">
+                </div>
+                <div class="projectContent">
+                    <div class="projectHead">
+                        <h2>Verdana 2 Residence</h2>
+                        <div class="projectRating">
+                            <i class="fa-solid fa-star yellow"></i>
+                            <label for="fa-star">4.63</label>
+                        </div>
+                    </div>
+                    <div class="projectText">
+                        <p>1 Bedroom Apartment for Rent in Continental Tower, Dubai Marina</p>
+                    </div>
+                    <div class="projectPrice">
+                        <div class="price">
+                            <h2>$231</h2>
+                            <label for="price">Night</label>
+                        </div>
+                        <button class="btn3">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="serviceContainer">
+            <div class="serviceImg">
+                <img src="assets/ServiceHouse.png" alt="ServiceHouse">
+            </div>
+            <div class="serviceContent">
+                <div class="serviceHead">
+                    <p class="text2">Our Best Services</p>
+                    <h1 class="title2">And Here's How? We Do Better Insurance Better</h1>
+                </div>
+                <div class="serviceList">
+                    <ul>
+                        <li>Save an average of $250 per year</li>
+                        <li>File a claim in 3 minutes</li>
+                        <li>Easily manage your policy online</li>
+                        <li>Skip the faxing, long paperwork, and unnecessary phone calls</li>
+                        <li>Get support from an Indian-based team</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="listings">
+        <div class="footerSection1">
+            <div class="footerContent">
+                <div class="textContent">
+                    <h1>Subscribe Our Newsletter</h1>
+                    <p>Subscribe to our newsletter for regular updates that you can know more
+                        information about us.</p>
+                    <div class="inputField">
+                        <input type="text" id="search" placeholder="Enter your email">
+                        <button class="search-btn" onclick="alert('Subscribed')">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footerImg">
+                <img src="assets/footerimg.png" alt="heroImg">
+            </div>
+        </div>
+        <div class="footerSection2">
+            <h3>Allstate By Harsh</h3>
+            <p>&copy; Copyright AllState, All Rights Reserved by Harsh Parmar 2024</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
